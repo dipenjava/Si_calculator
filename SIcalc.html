@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <link rel="stylesheet" href="SIcalc.css">
+        <script src="SIcalc.js"></script>
+
+
+
+    </head>
+
+    <body>
+        <div id="hey"></section>
+        <h1>Simple Interest Calculator</h1>
+        Amount<input type="number" id="principal"><br/>
+        Rate<input type="range" id="rate" min="0" max="25" step="0.25" onchange="updaterate()"></br>
+        <span id="rate_val">
+            10.25
+        </span>% <br/>
+
+        No. of Years <input type="number"  id="years" list="all_years">  <br/>
+        <datalist id="all_years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="0">None</option>
+        </datalist>
+
+        finally : <span id="result"></span><br>
+
+        <button onclick="compute()">Compute Interest</button>
+    </div>
+        <footer>
+            &#169; This Calculator belongs to Dipender Singh Kashyap
+        </footer>
+
+
+    </body>
+</html>
